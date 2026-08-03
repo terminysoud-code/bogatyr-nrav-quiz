@@ -70,7 +70,7 @@ export default function Home(){
   if(result && winner) return <main className="result-page">
     <header className="mini-head"><button className="brand" onClick={reset}><span>Б</span> БОГАТЫРСКИЙ НРАВ</button><button className="text-btn" onClick={reset}>Пройти заново</button></header>
     <section className="result-hero" style={{"--accent":winner.color} as React.CSSProperties}>
-      <figure className="portrait-card"><img src={`/portraits/${winner.id}.png`} alt={`Иллюстрация: ${winner.name}`} /><figcaption><strong>{winner.name}</strong><span>{winner.portrait}</span></figcaption></figure>
+      <figure className="portrait-card"><img src={`/portraits/${winner.id}.webp`} alt={`Иллюстрация: ${winner.name}`} /><figcaption><strong>{winner.name}</strong><span>{winner.portrait}</span></figcaption></figure>
       <div className="result-copy"><p className="eyebrow">ВАШ БЫЛИННЫЙ АРХЕТИП</p><h1>{winner.name}</h1><h2>{winner.epithet}</h2><blockquote>«{winner.motto}»</blockquote><p>{winner.description}</p><div className="chips">{winner.strengths.map(x=><span key={x}>{x}</span>)}</div></div>
     </section>
     <section className="result-grid"><article><p className="section-no">01 / В БЫЛИНАХ</p><h3>История архетипа</h3><p>{winner.story}</p></article><article><p className="section-no">02 / ОБРАТНАЯ СТОРОНА</p><h3>Испытание характера</h3><p>{winner.shadow}</p></article></section>
