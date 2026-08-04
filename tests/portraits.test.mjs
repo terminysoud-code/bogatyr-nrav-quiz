@@ -9,6 +9,7 @@ test("every quiz result uses a portrait committed under public/portraits", async
 
   assert.equal(heroIds.length, 12);
   assert.match(source, /src=\{`\/portraits\/\$\{winner\.id\}\.webp`\}/);
+  assert.match(source, /width=\{640\} height=\{1000\}[^>]*unoptimized/);
   assert.doesNotMatch(source, /(?:chatgpt|chatgpt-team\.site).*portraits/i);
 
   await Promise.all(
