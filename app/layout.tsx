@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://bogatyr-nrav-quiz-sand.vercel.app"),
   title: "Богатырский нрав — кто вы из героев былин?",
   description: "Психологический тест из 25 вопросов: узнайте свой архетип среди двенадцати героев русских былин.",
   openGraph: {

@@ -39,7 +39,7 @@ npm run build
 
 ## Технологии
 
-React 19, TypeScript, vinext/Vite и Cloudflare Workers-совместимая сборка.
+Next.js 16, React 19 и TypeScript. Production-развёртывание выполняется на Vercel.
 
 ## Лицензия
 
